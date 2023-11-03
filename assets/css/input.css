@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+p{
+    color: #3D3D3D;
+}
+
+h1, h2, h3 {
+    word-spacing: 1px;
+}

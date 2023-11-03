@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="flex justify-between p-4 h-[5dvh]">
+        <img src="./assets/images/logo.png" alt="Kompani logo" class="h-8">
+
+        <nav class="hidden md:flex">
+            <ul class="flex gap-5">
+                <li><a href="">blog</a></li>
+                <li><a href="" class="border border-black rounded-full px-4 py-2">get Kompani</a></li>
+            </ul>
+        </nav>
+
+        <!-- mobile hamburger menu -->
+        <div class="md:hidden">
+            ===
+        </div>
+
+    </header>
+
+    <!-- Hero section -->
+    <section class="flex p-5 items-center justify-center relative h-[95dvh]">
+        <div class="flex flex-col gap-5 text-center">
+            <h1 class="text-4xl md:text-5xl font-semibold">Never Feel <span class="text-warning">Helpless</span> Again
+            </h1>
+            <p class="text-lg">Find your spark & trybe with Kompani</p>
+
+            <div class="flex md:gap-2 justify-between md:justify-center">
+                <img src="./assets/images/playstore-badge.png" alt="playstore cta" class="w-3/5 md:w-[30%]">
+                <img src="./assets/images/apple-store-badge.png" alt="apple store cta" class="w-3/5 md:w-[30%]">
+            </div>
+        </div>
+
+        <!-- mobile Image-->
+        <img src="./assets/images/mobile-hero.png" alt="hero image" class="absolute bottom-0 left-0 md:hidden w-full">
+        <!-- tablet Image-->
+        <img src="./assets/images/tablet-hero.png" alt="hero image"
+            class="absolute bottom-0 left-0 hidden md:block lg:hidden w-full">
+        <!-- pc Image-->
+        <img src="./assets/images/logo.png" alt="" class="absolute bottom-0 left-0 hidden lg:block w-full">
+    </section>
+
+
+    <!-- section block 1 - Unleash Authetic self -->
+    <section class="bg-[#FFEBA4] min-h-screen relative px-4 py-12">
+        <h2 class="text-4xl font-semibold">Unleash Your <br> Authentic Self</h2>
+
+        <p class="font-normal py-4 md:w-3/5 text-lg md:text-xl">Connect with individuals who crave genuine conversations
+            off the quality of
+            your
+            mind and
+            heart and thrive on
+            authentic connections.
+        </p>
+
+        <img src="./assets/images/phone-mock.png" alt="phone image" class="absolute md:hidden bottom-0 left-0 right-0">
+        <img src="./assets/images/tablet-mock.png" alt="phone image" class="absolute hidden md:block bottom-0 right-5">
+    </section>
+
+    <!-- section block 2 - Find your tribe -->
+    <section
+        class="flex flex-col md:flex-col-reverse md: bg-faded min-h-screen relative px-4 py-12 overflow-hidden">
+        <div class="md:max-w-md mx-auto">
+            <h2 class="text-4xl font-semibold">Find your tribe</h2>
+
+            <p class="font-normal py-4 text-lg md:text-xl">
+                Being a lone wolf is cool; you know what’s way cooler? Finding the people who just "get" you; those who
+                have
+                walked or are walking in your shoes. Forge connections on Circles that would last a lifetime, and
+                surround
+                yourself with friends who uplift and inspire.
+            </p>
+        </div>
+
+        <img src="./assets/images/section2.png"
+            alt="phone image"
+            class="absolute md:hidden bottom-0 left-0 right-0 mx-auto">
+        <img src="./assets/images/section2-tablet.png"
+            alt="phone image"
+            class="hidden md:block absolute top-0 top-0 left-0 right-0 md:max-w-md mx-auto">
+    </section>
+
+    <!-- section block 3 - Chat Anonymously, Feel Empowered -->
+    <section class="bg-faded relative px-4 py-12 overflow-hidden">
+
+        <div class="flex flex-col md:flex-col-reverse gap-5 md:max-w-md mx-auto">
+            <div>
+                <h2 class="text-4xl font-semibold">Chat Anonymously,<br> Feel Empowered</h2>
+
+                <p class="font-normal py-4">
+                    Ever wanted to share your thoughts but feared being stigmatised? Our anonymous feature lets you
+                    express
+                    yourself without the fear of judgment. Kompani gets you heard and cared for.
+                </p>
+            </div>
+            <div class="text-8xl">👋</div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
