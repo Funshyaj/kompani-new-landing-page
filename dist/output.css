@@ -1016,6 +1016,40 @@ h1, h2, h3 {
   .xs\:right-5 {
     right: 1.25rem;
   }
+
+  .xs\:right-3 {
+    right: 0.75rem;
+  }
+
+  .xs\:w-2\/4 {
+    width: 50%;
+  }
+
+  .xs\:w-3\/5 {
+    width: 60%;
+  }
+
+  .xs\:w-4\/5 {
+    width: 80%;
+  }
+
+  .xs\:w-2\/5 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:left-\[unset\] {
+    left: unset;
+  }
+
+  .sm\:right-3 {
+    right: 0.75rem;
+  }
+
+  .sm\:w-3\/5 {
+    width: 60%;
+  }
 }
 
 @media (min-width: 768px) {
