@@ -1,8 +1,7 @@
 # kompani new landing page
 
-## To run locally
+## To run dev with css locally
 
-`` bash
+```bash
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-
-``
+```

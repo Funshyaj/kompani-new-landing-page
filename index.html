@@ -5,11 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="hidden fixed w-full h-full bg-white z-10 p-5">
+        <nav id="closeMobileMenu" class="flex justify-end">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1578_35359)">
+                    <path d="M28.125 7.875L7.875 28.125" stroke="black" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M28.125 28.125L7.875 7.875" stroke="black" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1578_35359">
+                        <rect width="36" height="36" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </nav>
+        <div class="flex flex-col h-full py-5 items-center justify-between">
+            <ul class="flex flex-col items-center gap-5 text-xl">
+                <li><a href="">blog</a></li>
+                <li>
+                    <a href=""
+                        class="border border-black rounded-full px-4 py-2 active:bg-black active:text-white lg:hover:bg-black lg:hover:text-white duration-300">
+                        get Kompani
+                    </a>
+                </li>
+            </ul>
+            <div class="flex flex-col">
+                <ul class="flex gap-4">
+                    <li>logo icon</li>
+                    <li>logo icon</li>
+                </ul>
+
+                <p>@2023 Kompani</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
     <header class="flex justify-between p-4 md:px-6 lg:px-8 h-[5dvh]">
         <img src="./assets/images/logo.png" alt="Kompani logo" class="h-8">
 
@@ -26,8 +67,22 @@
         </nav>
 
         <!-- mobile hamburger menu -->
-        <div class="md:hidden">
-            ===
+        <div id="openMobileMenu" class="md:hidden">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1612_2437)">
+                    <path d="M5.625 18H30.375" stroke="black" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M5.625 9H30.375" stroke="black" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M5.625 27H30.375" stroke="black" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1612_2437">
+                        <rect width="36" height="36" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
         </div>
 
     </header>
