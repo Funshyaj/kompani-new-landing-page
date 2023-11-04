@@ -655,6 +655,30 @@ video {
   width: 100%;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-\[47\%\] {
+  width: 47%;
+}
+
+.w-\[45\] {
+  width: 45;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -1107,6 +1131,10 @@ h1, h2, h3 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
