@@ -11,7 +11,10 @@ module.exports = {
         xs: "440px",
       },
       animation: {
-        "spin-slow": "spin 6s linear infinite",
+        "spin-slow": "spin 8s linear infinite",
+      },
+      borderRadius: {
+        curvy: "40px",
       },
     },
   },

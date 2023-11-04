@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <header class="flex justify-between py-4 md:px-6 lg:px-8 h-[5dvh]">
+    <header class="flex justify-between p-4 md:px-6 lg:px-8 h-[5dvh]">
         <img src="./assets/images/logo.png" alt="Kompani logo" class="h-8">
 
         <nav class="hidden md:flex">
-            <ul class="flex gap-5">
+            <ul class="flex gap-5 text-xl">
                 <li><a href="">blog</a></li>
-                <li><a href="" class="border border-black rounded-full px-4 py-2">get Kompani</a></li>
+                <li>
+                    <a href=""
+                        class="border border-black rounded-full px-4 py-2 active:bg-black active:text-white lg:hover:bg-black lg:hover:text-white duration-300">
+                        get Kompani
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -30,7 +35,7 @@
     <!-- Hero section -->
     <section class="flex p-5 items-center justify-center relative h-[95dvh]">
         <div class="flex flex-col gap-5 text-center">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl  font-semibold">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold drop-and-bounce">
                 Never Feel <span class="text-warning">Helpless</span> Again
             </h1>
             <p class="text-lg md:text-xl lg:text-2xl">Find your spark & trybe with Kompani</p>
@@ -47,15 +52,15 @@
         <img src="./assets/images/tablet-hero.png" alt="hero image"
             class="absolute bottom-0 left-0 hidden md:block lg:hidden w-full">
         <!-- pc Image-->
-        <img src="./assets/images/tablet-hero.png" alt="" class="absolute bottom-0 left-0 hidden lg:block w-full">
+        <img src="./assets/images/pc-hero.png" alt="" class="absolute bottom-0 left-0 hidden lg:block w-full">
     </section>
 
     <!-- wrapper 1 for pc -->
-    <div class="lg:flex justify-around py-4 px-3">
+    <div class="lg:flex justify-around lg:py-4">
 
         <!-- section block 1 - Unleash Authetic self -->
         <section
-            class="bg-[#FFEBA4] min-h-screen relative px-4 py-12 lg:border lg:rounded-xl lg:max-h-[840px] lg:min-h-[640px] lg:basis-[55%]">
+            class="bg-[#FFEBA4] min-h-screen relative px-4 py-12 lg:border lg:rounded-curvy lg:max-h-[840px] lg:min-h-[640px] lg:basis-[55%]">
             <h2 class="text-4xl font-semibold">Unleash Your <br> Authentic Self</h2>
 
             <p class="font-normal py-4 md:w-3/5 text-lg md:text-xl">Connect with individuals who crave genuine
@@ -75,7 +80,7 @@
 
         <!-- section block 2 - Find your tribe -->
         <section
-            class="flex flex-col md:flex-col-reverse md: bg-faded min-h-screen relative px-4 py-12 overflow-hidden lg:border lg:max-h-[840px] lg:min-h-[640px] lg:rounded-xl lg:basis-2/5">
+            class="flex flex-col md:flex-col-reverse md: bg-faded min-h-screen relative px-4 py-12 overflow-hidden lg:border lg:max-h-[840px] lg:min-h-[640px] lg:rounded-curvy lg:basis-2/5">
             <div class="md:max-w-md mx-auto">
                 <h2 class="text-4xl font-semibold">Find your tribe</h2>
 
@@ -100,10 +105,10 @@
     </div>
 
     <!-- wrapper 2 for pc -->
-    <div class="lg:flex justify-around py-4 px-3">
+    <div class="lg:flex justify-around lg:py-4">
         <!-- section block 3 - Chat Anonymously, Feel Empowered -->
         <section
-            class="bg-faded relative px-4 py-12 overflow-hidden lg:border lg:rounded-xl lg:max-h-[840px] lg:min-h-[640px] lg:basis-2/5">
+            class="bg-faded relative px-4 py-12 overflow-hidden lg:border lg:rounded-curvy lg:max-h-[640px] lg:min-h-[440px] lg:basis-2/5">
 
             <div class="flex flex-col md:flex-col-reverse gap-5 md:max-w-md mx-auto">
                 <div>
@@ -115,7 +120,7 @@
                         yourself without the fear of judgment. Kompani gets you heard and cared for.
                     </p>
                 </div>
-                <div class="text-8xl">👋</div>
+                <div class="text-8xl lg wobble-hor-bottom">👋</div>
 
             </div>
 
@@ -123,7 +128,7 @@
 
         <!-- section block 4 - A discrimination free zone -->
         <section
-            class="bg-[#E2E7F7] min-h-screen relative px-4 py-12 overflow-hidden lg:border lg:rounded-xl lg:max-h-[840px] lg:min-h-[640px] lg:basis-[55%]">
+            class="bg-[#E2E7F7] min-h-screen relative px-4 py-12 overflow-hidden lg:border lg:rounded-curvy lg:max-h-[640px] lg:min-h-[440px] lg:basis-[55%]">
             <h2 class="text-4xl font-semibold">A discrimination free zone</h2>
 
             <p class="font-normal py-4 md:w-3/5 text-lg md:text-xl">
@@ -133,12 +138,12 @@
             </p>
 
             <img src="./assets/images/section4.png" alt="phone image"
-                class="absolute bottom-5 w-full md:w-3/5 mx-auto right-0 xs:left-[unset] xs:right-5 animate-spin-slow duration-300 delay-300">
+                class="absolute bottom-5 w-full md:w-3/5 lg:w-2/5 mx-auto right-0 xs:left-[unset] xs:right-5 animate-spin-slow duration-300 delay-300">
         </section>
     </div>
 
-    <section class="bg-[#C5BFFF]">
-        <div class="md:bg-[#E2E7F7] px-4 py-12">
+    <div class="bg-[#C5BFFF]">
+        <section class="md:bg-[#E2E7F7] px-4 py-12">
             <img src="./assets/images/section5.png" alt="">
 
             <div class="pt-5 flex flex-col gap-5">
@@ -154,17 +159,89 @@
 
                 </form>
             </div>
-        </div>
+        </section>
 
 
-        <div class="bg-[#E2E7F7] px-4 py-12">
-            <div class="bg">
+        <section class="bg-[#E2E7F7] py-12">
+            <div class="px-4">
                 <p class="text-xl md:text-2xl">FAQs</p>
                 <h2 class="text-3xl font-semibold uppercase">We Know You Have Questions, We Have Answers</h2>
             </div>
+
+            <div>
+                <ul>
+                    <li class="flex flex-col p-4 gap-3 border rounded-t-3xl bg-white relative ">
+                        <div class="flex justify-between">
+                            <h3>What is Kompani</h3>
+                            <p>>></p>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos voluptatem vel
+                            tempore corporis quas qui nam nisi, asperiores dignissimos molestias, eveniet recusandae
+                            doloribus. Magnam dolor quo harum voluptate perferendis?
+                        </p>
+                    </li>
+                    <li class="flex flex-col p-4 gap-3 border rounded-t-3xl bg-[#F9C9B6] relative top-[-185px]">
+                        <div class="flex justify-between">
+                            <h3>What is Kompani</h3>
+                            <p>>></p>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos voluptatem vel
+                            tempore corporis quas qui nam nisi, asperiores dignissimos molestias, eveniet recusandae
+                            doloribus. Magnam dolor quo harum voluptate perferendis?
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="bg-[#3E4095] px-4 py-12 relative flex flex-col gap-10 min-h-[640px] lg:min-h-[540px]">
+        <h3 class="text-[#FEDF89] pb-3 text-center text-3xl md:text-4xl">
+            “We believe everyone deserves genuine connection, companionship, and a chance at self-expression”
+        </h3>
+        <p class="font-light text-white text-center text-lg">
+            We support deeply personal complexities and are building technology
+            that works for the people every day and every time in this new age. Join us
+        </p>
+
+        <div class="flex md:gap-2 justify-between md:justify-center">
+            <img src="./assets/images/playstore-badge.png" alt="playstore cta"
+                class="w-3/5 md:w-[30%] lg:w-1/5 xl:w-[15%]">
+            <img src="./assets/images/apple-store-badge.png" alt="apple cta"
+                class="w-3/5 md:w-[30%] lg:w-1/5 xl:w-[15%]">
         </div>
 
+        <!-- mobile Image-->
+        <img src="./assets/images/footer-mobile.png" alt="hero image"
+            class="absolute -bottom-5 left-0 md:hidden w-full">
+        <!-- tablet Image-->
+        <img src="./assets/images/footer-mobile.png" alt="hero image"
+            class="absolute -bottom-10 left-0 hidden md:block lg:hidden w-full">
+        <!-- pc Image-->
+        <img src="./assets/images/footer-pc.png" alt=""
+            class="absolute -bottom-12 left-0 hidden mx-auto lg:block w-full">
+
     </section>
+
+    <footer class="px-5 pt-12 pb-6 lg:pt-24 flex flex-col md:flex-row gap-4 items-center justify-between">
+        <img src="./assets/images/logo.png" alt="Kompani logo" class="h-8">
+
+        <div class="flex gap-5">
+            <a href="" class="font-semibold text-black text-lg">Policy</a>
+            <a href="" class="font-semibold text-black text-lg">Terms</a>
+            <a href="" class="font-semibold text-black text-lg">Faqs</a>
+        </div>
+
+        <ul class="flex gap-4">
+            <li>logo icon</li>
+            <li>logo icon</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
