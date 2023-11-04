@@ -3,5 +3,5 @@
 ## To run dev with css locally
 
 ```bash
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+npx tailwindcss -i ./assets/css/input.css -o ./dist/output.css --watch
 ```
