@@ -19,7 +19,6 @@ closeMobileMenu.addEventListener("click", () => {
 });
 
 // make 4 buttons
-
 faq1.addEventListener("click", () => {
   // mobile
   if (window.outerWidth < 768) {
