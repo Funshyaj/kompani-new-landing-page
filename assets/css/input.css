@@ -11,6 +11,10 @@ h1, h2, h3 {
     word-spacing: 1px;
 }
 
+#faq-btn{
+   cursor: pointer;     
+}
+
 .drop-and-bounce{
     animation: drop-and-bounce 2s;
     position: relative;
