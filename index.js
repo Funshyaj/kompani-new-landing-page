@@ -18,91 +18,165 @@ closeMobileMenu.addEventListener("click", () => {
   closeMobileMenu.parentElement.classList.add("hidden");
 });
 
-// faq.forEach((btn, index) => {
-//   btn.addEventListener("click", () => {
-//     if (index !== 3) {
-//       let length = 4 - index
-//       for (let index = 1; index < length; index++) {
-//         const element = faq[index];
-//         element.parentElement.parentElement.nextElementSibling.firstElementChild.lastElementChild.st
-
-//       }
-//      } else {
-//       console.log(btn.parentElement.previousElementSibling);
-//     }
-//   });
-
-//   faqLast.addEventListener("click", () => {});
-// });
-
 // make 4 buttons
 
 faq1.addEventListener("click", () => {
-  if (faq2.parentElement.parentElement.classList.contains("top-[-17rem]")) {
-    faq2.parentElement.parentElement.classList.remove("top-[-17rem]");
-    faq2.parentElement.parentElement.classList.add("top-[-8rem]");
+  // mobile
+  if (window.outerWidth < 768) {
+    if (faq2.parentElement.parentElement.classList.contains("top-[-46vh]")) {
+      faq2.parentElement.parentElement.classList.remove("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.add("top-[-15vh]");
 
-    faq3.parentElement.parentElement.classList.remove("top-[-34rem]");
-    faq3.parentElement.parentElement.classList.add("top-[-25rem]");
+      faq3.parentElement.parentElement.classList.remove("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.add("top-[-61vh]");
 
-    faq4.parentElement.parentElement.classList.remove("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.add("top-[-42rem]");
+      faq4.parentElement.parentElement.classList.remove("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.add("top-[-107vh]");
+    } else {
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-15vh]");
+
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-61vh]");
+
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-107vh]");
+    }
+    // tablet
   } else {
-    faq2.parentElement.parentElement.classList.add("top-[-17rem]");
-    faq2.parentElement.parentElement.classList.remove("top-[-8rem]");
+    if (faq2.parentElement.parentElement.classList.contains("top-[-46vh]")) {
+      faq2.parentElement.parentElement.classList.remove("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.add("top-[-26vh]");
 
-    faq3.parentElement.parentElement.classList.add("top-[-34rem]");
-    faq3.parentElement.parentElement.classList.remove("top-[-25rem]");
+      faq3.parentElement.parentElement.classList.remove("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.add("top-[-72vh]");
 
-    faq4.parentElement.parentElement.classList.add("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.remove("top-[-42rem]");
+      faq4.parentElement.parentElement.classList.remove("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.add("top-[-118vh]");
+    } else {
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-26vh]");
+
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-72vh]");
+
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-118vh]");
+    }
   }
 });
 
 faq2.addEventListener("click", () => {
-  if (faq3.parentElement.parentElement.classList.contains("top-[-34rem]")) {
-    faq3.parentElement.parentElement.classList.remove("top-[-34rem]");
-    faq3.parentElement.parentElement.classList.add("top-[-25rem]");
+  // mobile
+  if (window.outerWidth < 768) {
+    if (faq3.parentElement.parentElement.classList.contains("top-[-92vh]")) {
+      faq3.parentElement.parentElement.classList.remove("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.add("top-[-61vh]");
 
-    faq4.parentElement.parentElement.classList.remove("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.add("top-[-42rem]");
+      faq4.parentElement.parentElement.classList.remove("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.add("top-[-107vh]");
+    } else if (
+      !faq2.parentElement.parentElement.classList.contains("top-[-46vh]")
+    ) {
+      // if closed
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-15vh]");
+    } else {
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-61vh]");
+
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-107vh]");
+    }
+    // tablet
   } else {
-    faq2.parentElement.parentElement.classList.add("top-[-17rem]");
-    faq2.parentElement.parentElement.classList.remove("top-[-8rem]");
+    if (faq3.parentElement.parentElement.classList.contains("top-[-92vh]")) {
+      faq3.parentElement.parentElement.classList.remove("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.add("top-[-72vh]");
 
-    faq3.parentElement.parentElement.classList.add("top-[-34rem]");
-    faq3.parentElement.parentElement.classList.remove("top-[-25rem]");
+      faq4.parentElement.parentElement.classList.remove("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.add("top-[-118vh]");
+    } else if (
+      !faq2.parentElement.parentElement.classList.contains("top-[-46vh]")
+    ) {
+      // if closed
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-26vh]");
+    } else {
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-72vh]");
 
-    faq4.parentElement.parentElement.classList.add("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.remove("top-[-42rem]");
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-118vh]");
+    }
   }
 });
 
 faq3.addEventListener("click", () => {
-  if (faq4.parentElement.parentElement.classList.contains("top-[-51rem]")) {
-    faq4.parentElement.parentElement.classList.remove("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.add("top-[-42rem]");
+  // mobile
+  if (window.outerWidth < 768) {
+    if (faq4.parentElement.parentElement.classList.contains("top-[-138vh]")) {
+      faq4.parentElement.parentElement.classList.remove("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.add("top-[-107vh]");
+    } else if (
+      !faq3.parentElement.parentElement.classList.contains("top-[-92vh]")
+    ) {
+      // if closed
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-15vh]");
+
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-61vh]");
+    } else {
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-107vh]");
+    }
+    // tablet
   } else {
-    faq2.parentElement.parentElement.classList.add("top-[-17rem]");
-    faq2.parentElement.parentElement.classList.remove("top-[-8rem]");
+    if (faq4.parentElement.parentElement.classList.contains("top-[-138vh]")) {
+      faq4.parentElement.parentElement.classList.remove("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.add("top-[-118vh]");
+    } else if (
+      !faq3.parentElement.parentElement.classList.contains("top-[-92vh]")
+    ) {
+      // if closed
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-26vh]");
 
-    faq3.parentElement.parentElement.classList.add("top-[-34rem]");
-    faq3.parentElement.parentElement.classList.remove("top-[-25rem]");
-
-    faq4.parentElement.parentElement.classList.add("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.remove("top-[-42rem]");
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-72vh]");
+    } else {
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-118vh]");
+    }
   }
 });
 
 faq4.addEventListener("click", () => {
-  if (!faq4.parentElement.parentElement.classList.contains("top-[-51rem]")) {
-    faq2.parentElement.parentElement.classList.add("top-[-17rem]");
-    faq2.parentElement.parentElement.classList.remove("top-[-8rem]");
+  // mobile
+  if (window.outerWidth < 768) {
+    if (!faq4.parentElement.parentElement.classList.contains("top-[-138rem]")) {
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-15vh]");
 
-    faq3.parentElement.parentElement.classList.add("top-[-34rem]");
-    faq3.parentElement.parentElement.classList.remove("top-[-25rem]");
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-61vh]");
 
-    faq4.parentElement.parentElement.classList.add("top-[-51rem]");
-    faq4.parentElement.parentElement.classList.remove("top-[-42rem]");
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-107vh]");
+    }
+  }
+  // tablet
+  else {
+    if (!faq4.parentElement.parentElement.classList.contains("top-[-138rem]")) {
+      faq2.parentElement.parentElement.classList.add("top-[-46vh]");
+      faq2.parentElement.parentElement.classList.remove("top-[-26vh]");
+
+      faq3.parentElement.parentElement.classList.add("top-[-92vh]");
+      faq3.parentElement.parentElement.classList.remove("top-[-72vh]");
+
+      faq4.parentElement.parentElement.classList.add("top-[-138vh]");
+      faq4.parentElement.parentElement.classList.remove("top-[-118vh]");
+    }
   }
 });
