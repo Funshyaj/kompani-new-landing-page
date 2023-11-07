@@ -582,64 +582,12 @@ video {
   top: 0px;
 }
 
-.top-\[-17rem\] {
-  top: -17rem;
+.top-\[-107vh\] {
+  top: -107vh;
 }
 
-.top-\[-34rem\] {
-  top: -34rem;
-}
-
-.top-\[-51rem\] {
-  top: -51rem;
-}
-
-.top-\[-25rem\] {
-  top: -25rem;
-}
-
-.top-\[-48rem\] {
-  top: -48rem;
-}
-
-.top-\[-8rem\] {
-  top: -8rem;
-}
-
-.top-\[-42rem\] {
-  top: -42rem;
-}
-
-.top-\[-52rem\] {
-  top: -52rem;
-}
-
-.top-\[-17vh\] {
-  top: -17vh;
-}
-
-.top-\[-45vh\] {
-  top: -45vh;
-}
-
-.top-\[-35vh\] {
-  top: -35vh;
-}
-
-.top-\[-53vh\] {
-  top: -53vh;
-}
-
-.top-\[-44vh\] {
-  top: -44vh;
-}
-
-.top-\[-46vh\] {
-  top: -46vh;
-}
-
-.top-\[-92vh\] {
-  top: -92vh;
+.top-\[-118vh\] {
+  top: -118vh;
 }
 
 .top-\[-138rem\] {
@@ -650,48 +598,28 @@ video {
   top: -138vh;
 }
 
-.top-\[-18vh\] {
-  top: -18vh;
-}
-
-.top-\[-110vh\] {
-  top: -110vh;
-}
-
-.top-\[-64\] {
-  top: -64;
-}
-
-.top-\[-64vh\] {
-  top: -64vh;
-}
-
-.top-\[-107vh\] {
-  top: -107vh;
-}
-
 .top-\[-15vh\] {
   top: -15vh;
-}
-
-.top-\[-61vh\] {
-  top: -61vh;
-}
-
-.top-\[-118vh\] {
-  top: -118vh;
 }
 
 .top-\[-26vh\] {
   top: -26vh;
 }
 
+.top-\[-46vh\] {
+  top: -46vh;
+}
+
+.top-\[-61vh\] {
+  top: -61vh;
+}
+
 .top-\[-72vh\] {
   top: -72vh;
 }
 
-.top-\[26vh\] {
-  top: 26vh;
+.top-\[-92vh\] {
+  top: -92vh;
 }
 
 .z-10 {
@@ -727,8 +655,8 @@ video {
   height: 2rem;
 }
 
-.h-\[20rem\] {
-  height: 20rem;
+.h-\[53vh\] {
+  height: 53vh;
 }
 
 .h-\[5dvh\] {
@@ -743,28 +671,16 @@ video {
   height: 100%;
 }
 
-.h-\[53vh\] {
-  height: 53vh;
-}
-
-.max-h-\[440px\] {
-  max-height: 440px;
-}
-
-.max-h-\[540px\] {
-  max-height: 540px;
-}
-
-.max-h-\[640px\] {
-  max-height: 640px;
-}
-
-.max-h-\[600px\] {
-  max-height: 600px;
-}
-
 .max-h-\[680px\] {
   max-height: 680px;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.min-h-\[540px\] {
+  min-height: 540px;
 }
 
 .min-h-\[640px\] {
@@ -773,6 +689,14 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
+.min-h-\[680px\] {
+  min-height: 680px;
 }
 
 .w-6 {
@@ -886,6 +810,11 @@ video {
   background-color: rgb(62 64 149 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#6BD9E9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 217 233 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#C5BFFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(197 191 255 / var(--tw-bg-opacity));
@@ -919,11 +848,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#6BD9E9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 217 233 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -1014,11 +938,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-light {
   font-weight: 300;
 }
@@ -1029,10 +948,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
@@ -1049,6 +964,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
 .text-warning {
   --tw-text-opacity: 1;
   color: rgb(181 71 8 / var(--tw-text-opacity));
@@ -1057,11 +977,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-purple-400 {
-  --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1173,16 +1088,8 @@ h1, h2, h3 {
     right: 1.25rem;
   }
 
-  .xs\:max-h-\[600px\] {
-    max-height: 600px;
-  }
-
   .xs\:max-h-\[580px\] {
     max-height: 580px;
-  }
-
-  .xs\:max-h-\[540px\] {
-    max-height: 540px;
   }
 
   .xs\:w-2\/3 {
@@ -1217,16 +1124,12 @@ h1, h2, h3 {
     display: none;
   }
 
-  .md\:max-h-\[740px\] {
-    max-height: 740px;
-  }
-
   .md\:max-h-\[540px\] {
     max-height: 540px;
   }
 
-  .md\:max-h-\[240px\] {
-    max-height: 240px;
+  .md\:max-h-\[740px\] {
+    max-height: 740px;
   }
 
   .md\:min-h-\[440px\] {
@@ -1251,10 +1154,6 @@ h1, h2, h3 {
 
   .md\:max-w-md {
     max-width: 28rem;
-  }
-
-  .md\:max-w-lg {
-    max-width: 32rem;
   }
 
   .md\:max-w-xl {
