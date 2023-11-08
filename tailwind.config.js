@@ -10,9 +10,6 @@ module.exports = {
       screens: {
         xs: "440px",
       },
-      animation: {
-        "spin-slow": "spin 8s linear infinite",
-      },
       borderRadius: {
         curvy: "40px",
       },
